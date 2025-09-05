@@ -1,0 +1,8 @@
+name = "wisehacks"
+compatibility_date = "2025-09-05"
+
+# Entry point for the worker (Cloudflare will build this)
+main = "dist/_worker.js"
+
+# Static assets directory (after build)
+assets = { directory = "dist", exclude = ["_worker.js"] }
